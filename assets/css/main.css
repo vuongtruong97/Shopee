@@ -294,7 +294,8 @@
 .modal__content-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding: 16px 44px;
 }
 .modal__content-header h3 {
   font-size: 3rem;
@@ -315,7 +316,7 @@
 .modal__content-details-top {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 120px;
 }
@@ -328,10 +329,26 @@
   outline-color: var(--primary-color);
 }
 .modal__content-details-top .modal__content-rules {
+  width: 100%;
   font-size: 1.4rem;
   text-align: center;
 }
+.modal__content-details-top .modal__content-rules--login {
+  text-align: end;
+}
+.content-rules-fogot::before {
+  content: "";
+  width: 1px;
+  height: 16px;
+  border-left: 2px solid #ccc;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+}
 .modal__content-details-top .modal__content-rules a {
+  position: relative;
+  margin-left: 20px;
   color: var(--primary-color);
 }
 .modal__content-details-bottom {
@@ -359,9 +376,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
   font-size: 1.4rem;
   padding: 0 10px;
+  width: 45%;
+  height: 35px;
 }
 .modal__footer-btn-fb {
   color: #fff;
