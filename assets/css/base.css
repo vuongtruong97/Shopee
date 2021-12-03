@@ -3,7 +3,7 @@
   --black-color: #000;
   --text-color: #ccc;
   --blur-text-color: rgb(97, 96, 96);
-  --shopee-text-orange-color: #ff6533;
+  --primary-color: #ff6533;
 }
 * {
   box-sizing: inherit;
@@ -26,4 +26,63 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__content {
+  max-width: 550px;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 0.4rem;
+}
+.btn {
+  height: 34px;
+  border-radius: 0.2rem;
+  border: none;
+
+  cursor: pointer;
+  background-color: #fff;
+}
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.btn--normal:hover {
+  background-color: rgb(238, 238, 238);
+}
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  opacity: 0.8;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes box-growth {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
