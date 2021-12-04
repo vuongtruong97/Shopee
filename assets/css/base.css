@@ -28,7 +28,7 @@ html {
   flex-wrap: wrap;
 }
 .modal {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -71,6 +71,14 @@ html {
 .btn-primary:hover {
   background-color: var(--primary-color);
   opacity: 0.8;
+}
+.js__modal--login {
+}
+.show {
+  display: flex;
+}
+.hidden {
+  display: none;
 }
 
 /* Animation */
