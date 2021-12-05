@@ -143,14 +143,14 @@
             </div>
             <div class="header__content-search">
               <div class="header__content-search-input">
-                <input placeholder="Siêu sale tiêu dùng" type="text" />
-                <button class="btn btn-primary">
-                  <a href="#"
-                    ><i class="navbar__list-item-icon fas fa-search"></i
-                  ></a>
-                </button>
+                <input
+                  class="js__header-search-input"
+                  placeholder="Siêu sale tiêu dùng"
+                  type="text"
+                  maxlength="128"
+                />
                 <!-- Search extend -->
-                <div class="search--extend">
+                <div class="search--extend js__search-extend">
                   <ul class="search__list">
                     <li class="search__list-item">
                       <i
@@ -169,6 +169,11 @@
                     <li class="search__list-item">iphone 7 plus</li>
                   </ul>
                 </div>
+                <button class="btn btn-primary">
+                  <a href="#"
+                    ><i class="navbar__list-item-icon fas fa-search"></i
+                  ></a>
+                </button>
               </div>
               <div class="header__content-seacrh-suggest">
                 <ul class="search-suggest-list">
@@ -183,16 +188,19 @@
               </div>
             </div>
             <div class="header__content-cart">
-              <a href="#"><i class="fas fa-shopping-cart"></i></a>
-              <div class="cart__list-item cart__list-item--empty">
-                <div class="cart__list-item--empty-content">
-                  <img
-                    src="./assets/image/header_logo/cart__empty.png"
-                    alt=""
-                  />
-                  <span>Chưa có sản phẩm</span>
+              <button class="content-cart-button">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="cart__list-item cart__list-item--empty">
+                  <div class="cart__list-item--empty-content">
+                    <img
+                      src="./assets/image/header_logo/cart__empty.png"
+                      alt=""
+                    />
+                    <span>Chưa có sản phẩm</span>
+                  </div>
                 </div>
-              </div>
+              </button>
+
               <div class="cart__list-item cart__list-item--fill"></div>
             </div>
           </div>
@@ -315,6 +323,10 @@
       const modalBodyLogin = document.querySelector(".js__modal--login");
       const modalContainers = document.querySelectorAll(".js__modal-body");
       const modalBodyResgis = document.querySelector(".js__modal--register");
+      const headerSearchInput = document.querySelector(
+        ".js__header-search-input"
+      );
+
       function showModalContainerLogin() {
         modalBodyLogin.classList.add("show");
       }
@@ -327,6 +339,7 @@
       function hiddenModalContainerRegis() {
         modalBodyResgis.classList.remove("show");
       }
+
       for (const loginBtn of loginBtns) {
         loginBtn.addEventListener("click", showModalContainerLogin);
       }

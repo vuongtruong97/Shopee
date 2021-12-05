@@ -195,6 +195,8 @@
   background-color: #fff;
   color: var(--blur-text-color);
   box-shadow: 5px 10px 26px -8px #000;
+  animation: box-growth ease 0.3s;
+  transform-origin: calc(100% - 65px) top;
 }
 .navbar__list-item-language::before {
   content: "";
@@ -268,6 +270,7 @@
   outline: none;
   font-size: 1.4rem;
 }
+
 .header__content-search-input::before {
   display: none;
   position: absolute;
@@ -286,8 +289,10 @@
   width: 60px;
   height: 34px;
 }
+
 .search--extend {
   display: none;
+  /* display: flex; */
   position: absolute;
   top: 112%;
   left: 0;
@@ -297,10 +302,16 @@
   border-radius: 0.2rem;
   background-color: #fff;
   overflow: hidden;
+  animation: fadeIn ease 0.3s;
+}
+
+.header__content-search-input input:focus ~ .search--extend {
+  display: flex;
 }
 .search__list {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 .search__list .search__list-item {
   font-size: 1.4rem;
@@ -317,6 +328,7 @@
   opacity: 0.8;
   cursor: pointer;
 }
+
 .header__content-search .search-suggest-list {
   display: flex;
   color: #fff;
@@ -333,27 +345,35 @@
   width: 90px;
   font-size: 2.5rem;
 }
-
+.header__content-cart .content-cart-button {
+  border: none;
+  background-color: transparent;
+}
+.header__content-cart > .content-cart-button:hover .cart__list-item {
+  display: flex;
+}
 .header__content-cart .cart__list-item {
   display: none;
   position: absolute;
-  top: 150%;
-  right: 0;
+  top: 130%;
+  right: 0px;
   width: 400px;
   background-color: #fff;
   box-shadow: 3px 4px 18px -9px;
+  transform-origin: calc(100% - 45px) top;
+  will-change: opacity transform;
+  animation: box-growth ease 0.3s;
 }
-.header__content-cart:hover .cart__list-item {
-  display: flex;
-}
+
 .header__content-cart .cart__list-item::before {
   content: "";
-  width: 0px;
-  height: 0;
-  border: 15px solid #fff;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
   position: absolute;
   top: -6px;
-  right: 28px;
+  right: 30px;
   transform: rotate(45deg);
 }
 .cart__list-item--empty-content {
@@ -399,8 +419,8 @@
   cursor: pointer;
 }
 
-.modal__content-details {
-}
+/* .modal__content-details {
+} */
 .modal__content-details-top {
   display: flex;
   flex-direction: column;
@@ -485,5 +505,5 @@
 .modal__footer-btn i {
   font-size: 1.6rem;
 }
-.slider {
-}
+/* .slider {
+} */

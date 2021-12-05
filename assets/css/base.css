@@ -93,9 +93,11 @@ html {
 @keyframes box-growth {
   from {
     transform: scale(0);
+    opacity: 0.6;
   }
   to {
     transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes growth {
