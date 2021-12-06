@@ -115,7 +115,8 @@
                   <span>English</span>
                 </div>
               </li>
-              <li
+              <!-- Đăng ký, Đăng nhập -->
+              <!-- <li
                 class="
                   navbar__list-item
                   nav__list-item--seperate
@@ -134,12 +135,29 @@
                   href="#"
                   >Đăng nhập</a
                 >
+              </li> -->
+              <li class="navbar__list-item navbar__list-item-user">
+                <img
+                  class="navbar__list-item-user-avatar"
+                  src="./assets/image/user-avatar__demo/user__avatar.jpg"
+                  alt=""
+                />
+                <span class="navbar__list-item-user-name navbar__list-item-link"
+                  >Trương Quốc Vương</span
+                >
+                <div class="item-user-about">
+                  <ul class="user-list-infor">
+                    <li class="user-infor">Tài khoản của tôi</li>
+                    <li class="user-infor">Đơn mua</li>
+                    <li class="user-infor">Đăng xuất</li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </nav>
           <div class="header__content">
             <div class="header__content-logo">
-              <a href="#"></a>
+              <a class="header__content-logo--link" href="#"></a>
             </div>
             <div class="header__content-search">
               <div class="header__content-search-input">
@@ -209,12 +227,12 @@
                   >
                   <ul class="cart__--fill-list">
                     <li class="cart--fill-list-item">
-                      <div class="cart-item-img">
-                        <img
-                          src="./assets/image/cart__item-demo/camerac1cb.jpg"
-                          alt=""
-                        />
-                      </div>
+                      <img
+                        class="cart-item-img"
+                        src="./assets/image/cart__item-demo/camerac1cb.jpg"
+                        alt=""
+                      />
+
                       <div class="cart-item-about">
                         <span class="cart-item-name"
                           >Camera wifi 1MP 2MP EZVIZ C1C B 720P 1080P C2C C1HC
@@ -224,12 +242,12 @@
                       </div>
                     </li>
                     <li class="cart--fill-list-item">
-                      <div class="cart-item-img">
-                        <img
-                          src="./assets/image/cart__item-demo/line_cable.jpg"
-                          alt=""
-                        />
-                      </div>
+                      <img
+                        class="cart-item-img"
+                        src="./assets/image/cart__item-demo/line_cable.jpg"
+                        alt=""
+                      />
+
                       <div class="cart-item-about">
                         <span class="cart-item-name"
                           >Dây 2 đầu Jack loa 3.5 chuyển tai nghe phone thành
@@ -240,12 +258,12 @@
                       </div>
                     </li>
                     <li class="cart--fill-list-item">
-                      <div class="cart-item-img">
-                        <img
-                          src="./assets/image/cart__item-demo/xiaomi__fan.jpg"
-                          alt=""
-                        />
-                      </div>
+                      <img
+                        class="cart-item-img"
+                        src="./assets/image/cart__item-demo/xiaomi__fan.jpg"
+                        alt=""
+                      />
+
                       <div class="cart-item-about">
                         <span class="cart-item-name"
                           >Bản QUỐC TẾ - QUẠT KHÔNG DÂY THÔNG MINH XIAOMI
@@ -255,12 +273,12 @@
                       </div>
                     </li>
                     <li class="cart--fill-list-item">
-                      <div class="cart-item-img">
-                        <img
-                          src="./assets/image/cart__item-demo/balo__demo.jpg"
-                          alt=""
-                        />
-                      </div>
+                      <img
+                        class="cart-item-img"
+                        src="./assets/image/cart__item-demo/balo__demo.jpg"
+                        alt=""
+                      />
+
                       <div class="cart-item-about">
                         <span class="cart-item-name"
                           >BALO ULZZANG BASIC ( chống nước ) ( kèm sticker cài
@@ -270,12 +288,12 @@
                       </div>
                     </li>
                     <li class="cart--fill-list-item">
-                      <div class="cart-item-img">
-                        <img
-                          src="./assets/image/cart__item-demo/bocgheda__demo.jpg"
-                          alt=""
-                        />
-                      </div>
+                      <img
+                        class="cart-item-img"
+                        src="./assets/image/cart__item-demo/bocgheda__demo.jpg"
+                        alt=""
+                      />
+
                       <div class="cart-item-about">
                         <span class="cart-item-name"
                           >Bọc Ghế Ô Tô, Áo Ghế Ô Tô 🚗CAO CẤP🚗 Lót Liền Hạt Gỗ
@@ -297,7 +315,33 @@
       </header>
       <div class="container">
         <div class="grid">
-          <div class="slider"></div>
+          <aside class="left__section">
+            <div class="left__section-header">
+              <i class="fas fa-list-ul left__section-header-icon"></i>
+              <h3 class="left__section-heading">Danh mục</h3>
+            </div>
+            <div class="left__section-body">
+              <ul class="left__section-list">
+                <li class="left__section-options left__section-options--active">
+                  <a class="section__option-link" href=""> Siêu thị điện tử </a>
+                </li>
+                <li class="left__section-options">
+                  <a class="section__option-link" href="">Gì cũng rẻ,từ 1k</a>
+                </li>
+                <li class="left__section-options">
+                  <a class="section__option-link" href=""
+                    >Hoàn xu 10% - Đơn từ 0Đ</a
+                  >
+                </li>
+                <li class="left__section-options">
+                  <a class="section__option-link" href="">Freeship Extra</a>
+                </li>
+                <li class="left__section-options">
+                  <a class="section__option-link" href="">Shopee Mall</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
         </div>
       </div>
       <footer class="footer"></footer>
