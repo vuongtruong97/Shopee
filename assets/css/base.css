@@ -3,7 +3,7 @@
   --black-color: #000;
   --text-color: #ccc;
   --blur-text-color: rgb(97, 96, 96);
-  --primary-color: #ff6533;
+  --primary-color: #ee4d2d;
 }
 * {
   box-sizing: inherit;
@@ -28,7 +28,7 @@ html {
   flex-wrap: wrap;
 }
 .modal {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -72,6 +72,14 @@ html {
   background-color: var(--primary-color);
   opacity: 0.8;
 }
+.js__modal--login {
+}
+.show {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
 
 /* Animation */
 @keyframes fadeIn {
@@ -85,9 +93,11 @@ html {
 @keyframes box-growth {
   from {
     transform: scale(0);
+    opacity: 0.6;
   }
   to {
     transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes growth {

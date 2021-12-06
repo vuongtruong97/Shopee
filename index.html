@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="./assets/fonts/fontawesome-free-6.0.0-beta2-web/fontawesome-free-6.0.0-beta2-web/css/all.css"
     />
+    <link rel="stylesheet" href="./assets/js/javascript.js" />
   </head>
   <body>
     <div class="wrap">
@@ -26,10 +27,10 @@
           <nav class="navbar">
             <ul class="navbar__list">
               <li class="navbar__list-item nav__list-item--seperate">
-                <a class="navbar__list-item-link" href="">Kênh người bán</a>
+                <a class="navbar__list-item-link" href="#">Kênh người bán</a>
               </li>
               <li class="navbar__list-item nav__list-item--seperate">
-                <a class="navbar__list-item-link" href=""
+                <a class="navbar__list-item-link" href="#"
                   >Trở thành Người bán Shopee</a
                 >
               </li>
@@ -40,7 +41,7 @@
                   navbar__list-item-download
                 "
               >
-                <a class="navbar__list-item-link" href="">Tải ứng dụng</a>
+                <a class="navbar__list-item-link" href="#">Tải ứng dụng</a>
                 <div class="navbar__list-item-download-menu">
                   <img
                     src="./assets/image/header_logo/qr_download.png"
@@ -65,12 +66,12 @@
               </li>
               <li class="navbar__list-item navbar__list-item--text">Kết nối</li>
               <li title="Kết nối Facebook" class="navbar__list-item">
-                <a class="navbar__list-item-link" href=""
+                <a class="navbar__list-item-link" href="#"
                   ><i class="navbar__list-item-icon fab fa-facebook"></i
                 ></a>
               </li>
               <li title="Kết nối Intasgram!" class="navbar__list-item">
-                <a class="navbar__list-item-link" href=""
+                <a class="navbar__list-item-link" href="#"
                   ><i class="navbar__list-item-icon fab fa-instagram"></i
                 ></a>
               </li>
@@ -87,17 +88,21 @@
                     </div>
                   </div>
                   <div class="notification-menu-login">
-                    <div class="notification-menu-login-btn">
-                      <a href="">Đăng ký</a>
+                    <div
+                      class="notification-menu-login-btn js__navbar-item-login"
+                    >
+                      <a href="#">Đăng ký</a>
                     </div>
-                    <div class="notification-menu-login-btn">
-                      <a href="">Đăng nhập</a>
+                    <div
+                      class="notification-menu-login-btn js__navbar-item-login"
+                    >
+                      <a href="#">Đăng nhập</a>
                     </div>
                   </div>
                 </div>
               </li>
               <li class="navbar__list-item">
-                <a class="navbar__list-item-link" href=""
+                <a class="navbar__list-item-link" href="#"
                   ><i class="navbar__list-item-icon far fa-question-circle"></i
                   >&nbsp;Hỗ trợ</a
                 >
@@ -110,17 +115,23 @@
                   <span>English</span>
                 </div>
               </li>
-              <li class="navbar__list-item nav__list-item--seperate">
+              <li
+                class="
+                  navbar__list-item
+                  nav__list-item--seperate
+                  js__navbar-item-register
+                "
+              >
                 <a
                   class="navbar__list-item-link navbar__list-item-link--strong"
-                  href=""
+                  href="#"
                   >Đăng ký</a
                 >
               </li>
-              <li class="navbar__list-item">
+              <li class="navbar__list-item js__navbar-item-login">
                 <a
                   class="navbar__list-item-link navbar__list-item-link--strong"
-                  href=""
+                  href="#"
                   >Đăng nhập</a
                 >
               </li>
@@ -128,43 +139,174 @@
           </nav>
           <div class="header__content">
             <div class="header__content-logo">
-              <a href=""></a>
+              <a href="#"></a>
             </div>
             <div class="header__content-search">
               <div class="header__content-search-input">
-                <input placeholder="Siêu sale tiêu dùng" type="text" />
+                <input
+                  class="js__header-search-input"
+                  placeholder="Siêu sale tiêu dùng"
+                  type="text"
+                  maxlength="128"
+                />
+                <!-- Search extend -->
+                <div class="search--extend js__search-extend">
+                  <ul class="search__list">
+                    <li class="search__list-item">
+                      <i
+                        style="color: var(--primary-color)"
+                        class="fas fa-store"
+                      ></i
+                      >&nbsp;Tìm shop "iphone"
+                    </li>
+                    <li class="search__list-item">iphone</li>
+                    <li class="search__list-item">iphone 11</li>
+                    <li class="search__list-item">iphone 12 pro max</li>
+                    <li class="search__list-item">iphone 13</li>
+                    <li class="search__list-item">iphone 8 plus</li>
+                    <li class="search__list-item">iphone 6</li>
+                    <li class="search__list-item">iphone 13 pro max</li>
+                    <li class="search__list-item">iphone 7 plus</li>
+                  </ul>
+                </div>
                 <button class="btn btn-primary">
-                  <a href=""
+                  <a href="#"
                     ><i class="navbar__list-item-icon fas fa-search"></i
                   ></a>
                 </button>
               </div>
               <div class="header__content-seacrh-suggest">
                 <ul class="search-suggest-list">
-                  <li><a href="">Áo khoác</a></li>
-                  <li><a href="">Áo hoodie</a></li>
-                  <li><a href="">Dép</a></li>
-                  <li><a href="">Quần</a></li>
-                  <li><a href="">Bông tẩy trang</a></li>
-                  <li><a href="">Váy</a></li>
-                  <li><a href="">Tai nghe</a></li>
+                  <li><a href="#">Áo khoác</a></li>
+                  <li><a href="#">Áo hoodie</a></li>
+                  <li><a href="#">Dép</a></li>
+                  <li><a href="#">Quần</a></li>
+                  <li><a href="#">Bông tẩy trang</a></li>
+                  <li><a href="#">Váy</a></li>
+                  <li><a href="#">Tai nghe</a></li>
                 </ul>
               </div>
             </div>
             <div class="header__content-cart">
-              <a href=""><i class="fas fa-shopping-cart"></i></a>
+              <button class="content-cart-button">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <span class="cart-button-quantity">99+</span>
+                <!-- cart--empty: cart__list-item--empty -->
+                <div class="cart__list-item">
+                  <div class="cart__list-item--empty-content">
+                    <img
+                      src="./assets/image/header_logo/cart__empty.png"
+                      alt=""
+                    />
+                    <span>Chưa có sản phẩm</span>
+                  </div>
+                </div>
+                <!-- cart--empty: cart__list-item--fill -->
+
+                <div class="cart__list-item cart__list-item--fill">
+                  <span class="cart__list-item--fill-title"
+                    >Sản Phẩm Mới Thêm</span
+                  >
+                  <ul class="cart__--fill-list">
+                    <li class="cart--fill-list-item">
+                      <div class="cart-item-img">
+                        <img
+                          src="./assets/image/cart__item-demo/camerac1cb.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="cart-item-about">
+                        <span class="cart-item-name"
+                          >Camera wifi 1MP 2MP EZVIZ C1C B 720P 1080P C2C C1HC
+                          C6N C6CN C22EP BH 24 Tháng</span
+                        >
+                        <span class="cart-item-price">đ468.000</span>
+                      </div>
+                    </li>
+                    <li class="cart--fill-list-item">
+                      <div class="cart-item-img">
+                        <img
+                          src="./assets/image/cart__item-demo/line_cable.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="cart-item-about">
+                        <span class="cart-item-name"
+                          >Dây 2 đầu Jack loa 3.5 chuyển tai nghe phone thành
+                          loa và mic máy tính / gộp audio và mic 3.5 ra tai nghe
+                          loại NGẮN</span
+                        >
+                        <span class="cart-item-price">đ20.000</span>
+                      </div>
+                    </li>
+                    <li class="cart--fill-list-item">
+                      <div class="cart-item-img">
+                        <img
+                          src="./assets/image/cart__item-demo/xiaomi__fan.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="cart-item-about">
+                        <span class="cart-item-name"
+                          >Bản QUỐC TẾ - QUẠT KHÔNG DÂY THÔNG MINH XIAOMI
+                          SMARTMI GEN 3 / GEN 2 BẢO HÀNH 12 THÁNG</span
+                        >
+                        <span class="cart-item-price">đ1.390.000</span>
+                      </div>
+                    </li>
+                    <li class="cart--fill-list-item">
+                      <div class="cart-item-img">
+                        <img
+                          src="./assets/image/cart__item-demo/balo__demo.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="cart-item-about">
+                        <span class="cart-item-name"
+                          >BALO ULZZANG BASIC ( chống nước ) ( kèm sticker cài
+                          balo)</span
+                        >
+                        <span class="cart-item-price">đ159.000</span>
+                      </div>
+                    </li>
+                    <li class="cart--fill-list-item">
+                      <div class="cart-item-img">
+                        <img
+                          src="./assets/image/cart__item-demo/bocgheda__demo.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="cart-item-about">
+                        <span class="cart-item-name"
+                          >Bọc Ghế Ô Tô, Áo Ghế Ô Tô 🚗CAO CẤP🚗 Lót Liền Hạt Gỗ
+                          Tự Nhiên, Da PU Sang Trọng</span
+                        >
+                        <span class="cart-item-price">đ349.000</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <footer class="cart__list-item--fill-footer">
+                    <p class="cart--fill-note">95 thêm hàng vào giỏ</p>
+                    <a href="#" class="cart--fill-view-cart">Xem Giỏ Hàng</a>
+                  </footer>
+                </div>
+              </button>
             </div>
           </div>
         </div>
       </header>
-      <div class="container"></div>
+      <div class="container">
+        <div class="grid">
+          <div class="slider"></div>
+        </div>
+      </div>
       <footer class="footer"></footer>
     </div>
 
     <!-- Register form -->
-    <!-- <div class="modal">
+    <div class="modal js__modal--register">
       <div class="modal__overlay"></div>
-      <div class="modal__content">
+      <div class="modal__content js__modal-body">
         <header class="modal__content-header modal__content-layout">
           <h3>Đăng ký</h3>
           <h2>Đăng nhập</h2>
@@ -189,8 +331,8 @@
 
             <p class="modal__content-rules">
               Bằng việc đăng ký, bạn đã đồng ý với Shopee về
-              <a href="">Điều khoản dịch vụ</a>
-              & <a href="">Chính sách bảo mật</a>
+              <a href="#">Điều khoản dịch vụ</a>
+              & <a href="#">Chính sách bảo mật</a>
             </p>
           </div>
           <div class="modal__content-details-bottom">
@@ -205,23 +347,23 @@
         <footer class="modal__content-footer modal__content-layout">
           <button class="btn modal__footer-btn modal__footer-btn-fb">
             <i class="fab fa-facebook-square"></i>
-            <a href="">Kết nối với FaceBook</a>
+            <a href="#">Kết nối với FaceBook</a>
           </button>
           <button class="btn modal__footer-btn modal__footer-btn-gg">
             <i class="fab fa-google"></i>
-            <a href="">Kết nối với Google</a>
+            <a href="#">Kết nối với Google</a>
           </button>
         </footer>
       </div>
-    </div> -->
+    </div>
 
     <!-- Login form -->
-    <!-- <div class="modal">
+    <div class="modal js__modal--login">
       <div class="modal__overlay"></div>
-      <div class="modal__content">
+      <div class="modal__content js__modal-body">
         <header class="modal__content-header modal__content-layout">
           <h3>Đăng nhập</h3>
-          <h2>Đăng ký</h2>
+          <h2 class="js__navbar-item-register">Đăng ký</h2>
         </header>
         <div class="modal__content-details modal__content-layout">
           <div class="modal__content-details-top">
@@ -237,8 +379,8 @@
             />
 
             <p class="modal__content-rules modal__content-rules--login">
-              <a class="content-rules-fogot" href="">Quên mật khẩu</a>
-              <a class="content-rules-help" href="">Cẩn trợ giúp?</a>
+              <a class="content-rules-fogot" href="#">Quên mật khẩu</a>
+              <a class="content-rules-help" href="#">Cẩn trợ giúp?</a>
             </p>
           </div>
           <div class="modal__content-details-bottom">
@@ -253,14 +395,54 @@
         <footer class="modal__content-footer modal__content-layout">
           <button class="btn modal__footer-btn modal__footer-btn-fb">
             <i class="fab fa-facebook-square"></i>
-            <a href="">Kết nối với FaceBook</a>
+            <a href="#">Kết nối với FaceBook</a>
           </button>
           <button class="btn modal__footer-btn modal__footer-btn-gg">
             <i class="fab fa-google"></i>
-            <a href="">Kết nối với Google</a>
+            <a href="#">Kết nối với Google</a>
           </button>
         </footer>
       </div>
-    </div> -->
+    </div>
+    <script>
+      const loginBtns = document.querySelectorAll(".js__navbar-item-login");
+      const registerBtns = document.querySelectorAll(
+        ".js__navbar-item-register"
+      );
+      const modalBodyLogin = document.querySelector(".js__modal--login");
+      const modalContainers = document.querySelectorAll(".js__modal-body");
+      const modalBodyResgis = document.querySelector(".js__modal--register");
+      const headerSearchInput = document.querySelector(
+        ".js__header-search-input"
+      );
+
+      function showModalContainerLogin() {
+        modalBodyLogin.classList.add("show");
+      }
+      function hiddenModalContainer() {
+        modalBodyLogin.classList.remove("show");
+      }
+      function showModalContainerRegis() {
+        modalBodyResgis.classList.add("show");
+      }
+      function hiddenModalContainerRegis() {
+        modalBodyResgis.classList.remove("show");
+      }
+
+      for (const loginBtn of loginBtns) {
+        loginBtn.addEventListener("click", showModalContainerLogin);
+      }
+      for (const registerBtn of registerBtns) {
+        registerBtn.addEventListener("click", showModalContainerRegis);
+      }
+
+      modalBodyResgis.addEventListener("click", hiddenModalContainerRegis);
+      modalBodyLogin.addEventListener("click", hiddenModalContainer);
+      for (const modalContainer of modalContainers) {
+        modalContainer.addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+      }
+    </script>
   </body>
 </html>
