@@ -1,11 +1,11 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
-  --text-color: #ccc;
-  --blur-text-color: rgb(97, 96, 96);
+  --text-color: #313131;
   --primary-color: #ee4d2d;
   --box-hover-color: #f0f0f0;
   --text-link-hover-color: hsla(0, 0%, 100%, 0.7);
+  --button-hover-color: rgb(224, 224, 224);
 }
 * {
   box-sizing: inherit;
@@ -30,7 +30,26 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
 }
+/* Demo */
+.grid__column-2-12 {
+  width: calc((100% / 12) * 2);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.grid__column-10-12 {
+  width: calc((100% / 12) * 10);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.grid__column-1-5 {
+  width: calc((100% / 5) * 1);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -61,12 +80,15 @@ html {
   height: 34px;
   border-radius: 0.2rem;
   border: none;
-
+  font-size: 1.4rem;
+  padding: 0 16px;
+  border: none;
+  outline: none;
   cursor: pointer;
   background-color: #fff;
 }
 .btn-primary {
-  color: #fff;
+  color: var(--white-color);
   background-color: var(--primary-color);
 }
 .btn--normal:hover {
