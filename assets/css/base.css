@@ -26,12 +26,12 @@ html {
 .grid_full-width {
   width: 100%;
 }
-.grid__row-pd12 {
+.grid__row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 .grid__row-pd5 {
   display: flex;
@@ -41,17 +41,17 @@ html {
   margin-right: -5px;
 }
 /* Demo */
-.grid__column-2-12 {
+.grid__column-2 {
   width: calc((100% / 12) * 2);
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-.grid__column-10-12 {
+.grid__column-10 {
   width: calc((100% / 12) * 10);
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-.grid__column-1-5 {
+.grid__column-2-4 {
   width: calc((100% / 5) * 1);
   padding-left: 5px;
   padding-right: 5px;
@@ -105,8 +105,7 @@ html {
   background-color: var(--primary-color);
   opacity: 0.8;
 }
-.js__modal--login {
-}
+
 .show {
   display: flex;
 }
