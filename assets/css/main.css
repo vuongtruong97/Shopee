@@ -849,6 +849,7 @@
   font-size: 1.4rem;
   color: var(--text-color);
   min-height: 330px;
+  cursor: pointer;
 }
 .product-card-details {
   display: flex;
