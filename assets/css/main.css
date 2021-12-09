@@ -916,15 +916,3 @@
   display: flex;
   justify-content: flex-end;
 }
-
-.product-card {
-  /* overflow: hidden;
-  -webkit-line-clamp: 1;
-  text-overflow: ellipsis;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  margin-top: 10px;
-  font-size: 1.6rem;
-  display: flex;
-  flex-direction: column; */
-}
