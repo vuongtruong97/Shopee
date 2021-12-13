@@ -1047,8 +1047,29 @@
 }
 .footer__content {
   margin-top: 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
 }
-.footer__content-test {
+.footer__content-col {
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: var(--footer-text-color);
 }
+.footer__content-topic {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+  
+}
+.footer__content-topic-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content-topic-details {
+font-size: 1.3rem;
+padding: 6px 0;
+}
+.footer__content-topic-details i {
+ margin-right: 8px;
+}
+
