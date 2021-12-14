@@ -6,7 +6,7 @@
   --box-hover-color: #f0f0f0;
   --text-link-hover-color: hsla(0, 0%, 100%, 0.7);
   --button-hover-color: rgb(224, 224, 224);
-  --footer-text-color: rgba(0, 0, 0, 0.575);
+  --footer-text-color: rgba(0, 0, 0, 0.637);
 }
 * {
   box-sizing: inherit;
