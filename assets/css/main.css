@@ -493,6 +493,7 @@
   height: 60px;
   display: flex;
   padding: 8px;
+  cursor: pointer;
 }
 .cart--fill-list-item:hover {
   background-color: rgba(204, 204, 204, 0.178);
@@ -1044,8 +1045,15 @@
   flex-direction: column;
 }
 .footer__content-topic-details {
+  display: flex;
+  align-items: center;
   font-size: 1.3rem;
   padding: 6px 0;
+}
+.footer__content-topic-details-icon {
+  font-size: 2rem;
+  position: relative;
+  top: 2px;
 }
 .footer__content-topic-details a {
   color: var(--footer-text-color);
@@ -1163,7 +1171,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  color: var(--footer-text-color);
+  color: var(--text-color);
   margin: 20px 0;
 }
 .company-about-contact {
@@ -1174,6 +1182,6 @@
 }
 .company-about-contact span {
   font-size: 1.2rem;
-  color: var(--footer-text-color);
+  color: var(--text-color);
   margin-bottom: 8px;
 }

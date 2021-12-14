@@ -2110,15 +2110,15 @@
                   >
                   <ul class="footer__content-topic-list">
                     <li class="footer__content-topic-details">
-                      <a href="#"> <i class="fab fa-facebook"></i>Facebook </a>
+                      <a href="#"> <i class="footer__content-topic-details-icon fab fa-facebook"></i>Facebook </a>
                     </li>
                     <li class="footer__content-topic-details">
                       <a href="#">
-                        <i class="fab fa-instagram-square"></i>Intasgram
+                        <i class="footer__content-topic-details-icon fab fa-instagram-square"></i>Intasgram
                       </a>
                     </li>
                     <li class="footer__content-topic-details">
-                      <a href="#"> <i class="fab fa-linkedin"></i>LinkedIn </a>
+                      <a href="#"> <i class="footer__content-topic-details-icon fab fa-linkedin"></i>LinkedIn </a>
                     </li>
                   </ul>
                 </div>
@@ -2190,16 +2190,12 @@
             <span>Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</span>
             <span>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</span>
             <span>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</span>
-
           </div>
         
           </div>
         </div>
-
-
       </footer>
     </div>
-
     <!-- Register form -->
     <div class="modal js__modal--register">
       <div class="modal__overlay"></div>
@@ -2225,7 +2221,6 @@
               type="password"
               placeholder="Vui lòng nhập lại mật khẩu"
             />
-
             <p class="modal__content-rules">
               Bằng việc đăng ký, bạn đã đồng ý với Shopee về
               <a href="#">Điều khoản dịch vụ</a>
@@ -2253,7 +2248,6 @@
         </footer>
       </div>
     </div>
-
     <!-- Login form -->
     <div class="modal js__modal--login">
       <div class="modal__overlay"></div>
@@ -2274,7 +2268,6 @@
               type="password"
               placeholder="Mật khẩu của bạn"
             />
-
             <p class="modal__content-rules modal__content-rules--login">
               <a class="content-rules-fogot" href="#">Quên mật khẩu</a>
               <a class="content-rules-help" href="#">Cẩn trợ giúp?</a>
@@ -2312,7 +2305,6 @@
       const headerSearchInput = document.querySelector(
         ".js__header-search-input"
       );
-
       function showModalContainerLogin() {
         modalBodyLogin.classList.add("show");
       }
@@ -2325,14 +2317,12 @@
       function hiddenModalContainerRegis() {
         modalBodyResgis.classList.remove("show");
       }
-
       for (const loginBtn of loginBtns) {
         loginBtn.addEventListener("click", showModalContainerLogin);
       }
       for (const registerBtn of registerBtns) {
         registerBtn.addEventListener("click", showModalContainerRegis);
       }
-
       modalBodyResgis.addEventListener("click", hiddenModalContainerRegis);
       modalBodyLogin.addEventListener("click", hiddenModalContainer);
       for (const modalContainer of modalContainers) {
