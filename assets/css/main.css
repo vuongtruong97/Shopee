@@ -1028,7 +1028,6 @@
 .footer__content {
   margin-top: 100px;
   padding-bottom: 50px;
-  border-bottom: 1px solid #ccc;
 }
 .footer__content-col {
   font-size: 1.5rem;
@@ -1092,7 +1091,7 @@
 .footer__content-topic-dowload-qrcode {
   width: 40%;
   margin-right: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(226, 226, 226);
 }
 .footer__content-topic-dowload-qrcode img {
   width: 100%;
@@ -1113,6 +1112,7 @@
   font-size: 1.3rem;
   justify-content: space-between;
   color: var(--text-color);
+  border-top: 1px solid rgb(224, 224, 224);
 }
 .footer__area-left {
   padding-right: 40px;
@@ -1184,4 +1184,19 @@
   font-size: 1.2rem;
   color: var(--text-color);
   margin-bottom: 8px;
+}
+/* Floating item */
+.floating-item {
+  position: fixed;
+  bottom: 13vh;
+  right: 13vw;
+  width: 82px;
+  height: 82px;
+}
+.floating-item-link {
+  display: block;
+  background: url("../image/floating__item/floating__img.png") no-repeat center /
+    cover;
+  width: 100%;
+  padding-top: 100%;
 }
