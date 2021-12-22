@@ -1,13 +1,54 @@
 /* Header__navigation */
 .header {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  /* height: 120px; */
+  height: var(--header-height);
+
   background: linear-gradient(-180deg, #f53e2d, #ff6533);
 }
+.header__sort-bar {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: var(--header-height);
+  width: 100%;
+  height: var(--sort-bar-height);
+  background-color: #fff;
+}
+.header__sort-bar-list {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.header__sort-bar-item {
+  position: relative;
+  width: 20%;
+}
+.header__sort-bar-item--active .header__sort-bar-item-link {
+  color: var(--primary-color);
+}
+.header__sort-bar-item:not(:first-child):before {
+  content: "";
+  width: 1px;
+  height: 60%;
+  border-left: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__sort-bar-item-link {
+  display: block;
+  line-height: var(--header-sort-bar-height);
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -331,9 +372,19 @@
   display: flex;
   align-items: center;
 }
+.header__mobile-search {
+  width: 90px;
+  text-align: center;
+}
+.header__mobile-search-icon {
+  padding: 10px;
+  font-size: 2.5rem;
+  color: white;
+}
 .header__content-logo {
   background: url(../image/header_logo/header_logo.png) no-repeat center /
     contain;
+
   width: 22.5%;
   height: 88px;
 }
@@ -445,7 +496,7 @@
   font-size: 2.5rem;
 }
 .header__content-cart .content-cart-button {
-  position: absolute;
+  position: relative;
   border: none;
   background-color: transparent;
 }
@@ -519,6 +570,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-clamp: 1;
+  text-align: start;
 }
 .cart-item-price {
   white-space: nowrap;
@@ -695,7 +747,7 @@
   font-size: 1.6rem;
 }
 .container {
-  padding-top: 36px;
+  padding-top: calc(var(--header-height) + 20px);
   background-color: #f9f9f9;
 }
 /* Left Section */

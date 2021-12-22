@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shoppe</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,12 +20,13 @@
       href="./assets/fonts/fontawesome-free-6.0.0-beta2-web/fontawesome-free-6.0.0-beta2-web/css/all.css"
     />
     <link rel="stylesheet" href="./assets/js/javascript.js" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
   </head>
   <body>
     <div class="wrap">
       <header class="header">
-        <div class="grid">
-          <nav class="navbar">
+        <div class="grid wide">
+          <nav class="navbar hide-on-mobile-tablet">
             <ul class="navbar__list">
               <li class="navbar__list-item nav__list-item--seperate">
                 <a class="navbar__list-item-link" href="#">Kênh người bán</a>
@@ -159,10 +161,13 @@
             </ul>
           </nav>
           <div class="header__content">
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+              <i class="header__mobile-search-icon fas fa-search"></i>
+            </label>
             <div class="header__content-logo">
               <a class="header__content-logo--link" href="#"></a>
             </div>
-            <div class="header__content-search">
+            <div class="header__content-search hide-on-mobile">
               <div class="header__content-search-input">
                 <input
                   class="js__header-search-input"
@@ -196,7 +201,7 @@
                   ></a>
                 </button>
               </div>
-              <div class="header__content-seacrh-suggest">
+              <div class="header__content-seacrh-suggest hide-on-mobile-tablet">
                 <ul class="search-suggest-list">
                   <li><a href="#">Áo khoác</a></li>
                   <li><a href="#">Áo hoodie</a></li>
@@ -315,11 +320,30 @@
             </div>
           </div>
         </div>
+        <div class="header__sort-bar">
+          <ul class="header__sort-bar-list">
+            <li class="header__sort-bar-item">
+              <a href="#" class="header__sort-bar-item-link">Mới nhất</a>
+            </li>
+            <li class="header__sort-bar-item header__sort-bar-item--active">
+              <a href="#" class="header__sort-bar-item-link">Bán chạy</a>
+            </li>
+            <li class="header__sort-bar-item">
+              <a href="#" class="header__sort-bar-item-link">Shopee Mall</a>
+            </li>
+            <li class="header__sort-bar-item">
+              <a href="#" class="header__sort-bar-item-link">Phổ Biến</a>
+            </li>
+            <li class="header__sort-bar-item">
+              <a href="#" class="header__sort-bar-item-link">Giá</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <div class="container">
-        <div class="grid">
-          <div class="grid__row">
-            <div class="grid__column-2">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-2 m-0 c-0">
               <aside class="left__section">
                 <div class="left__section-header">
                   <i class="fas fa-list-ul left__section-header-icon"></i>
@@ -360,9 +384,9 @@
               </aside>
             </div>
             <!-- Product Container -->
-            <div class="grid__column-10">
+            <div class="col l-10 m-12 c-12">
               <div class="product__container">
-                <header class="product__container--header">
+                <header class="product__container--header  hide-on-mobile-tablet">
                   <div class="product__container--header-filter">
                     <span class="product__container--header-filter-title"
                       >Sắp xếp theo</span
@@ -442,8 +466,8 @@
                   </div>
                 </header>
                 <div class="product__container--body">
-                  <div class="grid__row">
-                    <div class="grid__column-2-4">
+                  <div class="row">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -503,7 +527,7 @@
                         </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -559,7 +583,7 @@
                         </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -618,7 +642,7 @@
                         </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -677,7 +701,7 @@
                         </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -735,7 +759,7 @@
                         </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -791,7 +815,7 @@
                         </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -852,7 +876,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -910,7 +934,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -970,7 +994,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1028,7 +1052,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1089,7 +1113,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1150,7 +1174,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1211,7 +1235,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1271,7 +1295,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1332,7 +1356,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1390,7 +1414,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1451,7 +1475,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1513,7 +1537,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1574,7 +1598,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1634,7 +1658,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1695,7 +1719,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1753,7 +1777,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1814,7 +1838,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1874,7 +1898,7 @@
                         <span class="product__card-label"> Mall </span>
                       </a>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                       <a href="#" class="product-card">
                         <div
                           style="
@@ -1961,9 +1985,9 @@
       </div>
       <footer class="footer">
         <div class="footer__content">
-          <div class="grid">
+          <div class="grid wide">
             <div class="grid__row">
-              <div class="grid__column-2-4">
+              <div class="col l-2-4 m-4 c-12">
                 <div class="footer__content-col">
                   <span class="footer__content-topic">CHĂM SÓC KHÁCH HÀNG</span>
                   <ul class="footer__content-topic-list">
@@ -2003,7 +2027,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="grid__column-2-4">
+              <div class="col l-2-4 m-4 c-12">
                 <div class="footer__content-col">
                   <span class="footer__content-topic"> VỂ SHOPEE </span>
                   <ul class="footer__content-topic-list">
@@ -2037,7 +2061,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="grid__column-2-4">
+              <div class="col l-2-4 m-4 c-12">
                 <div class="footer__content-col">
                   <span class="footer__content-topic">THANH TOÁN</span>
                   <ul class="footer__content-topic-list footer-topic-list-row">
@@ -2103,7 +2127,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="grid__column-2-4">
+              <div class="col l-2-4 m-4 c-12">
                 <div class="footer__content-col">
                   <span class="footer__content-topic"
                     >THEO DÕI CHÚNG TÔI TRÊN</span
@@ -2123,7 +2147,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="grid__column-2-4">
+              <div class="col l-2-4 m-4 c-12">
                 <a href="#" class="footer__content-col">
                   <span class="footer__content-topic"
                     >TẢI ỨNG DỤNG SHOPEE NGAY THÔI</span>
@@ -2149,7 +2173,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__area grid">                 
+        <div class="footer__area grid wide">                 
           <div class="footer__area-left">© 2021 Shopee. Tất cả các quyền được bảo lưu.</div>
           <div class="footer__area-right">
             <span class="footer__area-right-item">Quốc Gia & Khu vực:</span>
@@ -2171,7 +2195,7 @@
           </div>
         </div>
         <div class="footer__company-about">
-          <div class="grid">
+          <div class="grid wide">
             
           <div class="company-about-list-policy">
             <div class="company-about-policy-item">Chính sách bảo mật</div>
