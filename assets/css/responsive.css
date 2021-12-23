@@ -24,6 +24,12 @@
 
   .header__content-cart .cart__list-item {
     position: fixed;
+    top: var(--header-height);
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 calc((100% - 644px) / 2);
+    z-index: 4;
   }
   .header__content-cart .cart__list-item::before {
     display: none;
@@ -42,14 +48,6 @@
     background-position: -20% 60%;
   }
 
-  .header__content-cart .cart__list-item {
-    top: var(--header-height);
-    width: 100%;
-    left: 0;
-    right: 0;
-    padding: 0 calc((100% - 644px) / 2);
-    z-index: 4;
-  }
   .cart__list-item--fill-title {
     text-align: center;
     text-transform: uppercase;
@@ -61,6 +59,9 @@
   .hide-on-mobile {
     display: none;
   }
+  .header__content-mobile-menu-and-search {
+    display: flex;
+  }
   .header__content {
     justify-content: space-between;
   }
@@ -68,6 +69,64 @@
     background-size: 136%;
     background-position: 0% 88%;
   }
+  .header__content-cart {
+    width: auto;
+    justify-content: space-between;
+  }
+  .mobile__item-user {
+    display: block;
+    padding-left: 20px;
+  }
+  .navbar__list-item-user-avatar {
+    height: 30px;
+    width: auto;
+  }
+  .item-user-about {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    top: 100%;
+    right: 5px;
+    width: 200px;
+  }
+  .item-user-about::before {
+    display: none;
+  }
+  .user-infor {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .header__content-search {
+    /* display: none; */
+    position: fixed;
+    background-color: #fff;
+    top: var(--header-height);
+    z-index: 3;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0 2px;
+    height: calc(var(--header-sort-bar-height) + 4px);
+    align-items: center;
+    justify-content: center;
+    animation: fadedown linear 0.3s;
+  }
+  .header__search-checkbox:checked ~ .header__content-search {
+    display: flex;
+  }
+  .search--extend {
+    position: fixed;
+    top: calc(var(--header-height) + var(--header-sort-bar-height) + 8px);
+    left: 0;
+    right: 0;
+    width: auto;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  .header__sort-bar {
+    padding: 0;
+  }
 }
+
 @media screen and (max-width: 480px) {
 }

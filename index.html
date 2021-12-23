@@ -161,12 +161,19 @@
             </ul>
           </nav>
           <div class="header__content">
+           <div class="header__content-mobile-menu-and-search">
+            <button class="mobile-menu-btn">
+              <i class="mobile-menu-btn-icon fas fa-bars"></i>
+            </button>
             <label for="mobile-search-checkbox" class="header__mobile-search">
               <i class="header__mobile-search-icon fas fa-search"></i>
             </label>
+           
+           </div>
             <div class="header__content-logo">
               <a class="header__content-logo--link" href="#"></a>
             </div>
+            <input type="checkbox" name="" hidden  id="mobile-search-checkbox" class="header__search-checkbox">
             <div class="header__content-search hide-on-mobile">
               <div class="header__content-search-input">
                 <input
@@ -215,8 +222,10 @@
             </div>
             <div class="header__content-cart">
               <button class="content-cart-button">
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <span class="cart-button-quantity">99+</span>
+                <a class="content-cart-button-link" href="#"><i  class="fas fa-shopping-cart"></i>
+                  <span class="cart-button-quantity">99+</span></a>
+                  
+               
                 <!-- cart--empty: cart__list-item--empty -->
                 <div class="cart__list-item">
                   <div class="cart__list-item--empty-content">
@@ -317,7 +326,26 @@
                   </footer>
                 </div>
               </button>
+              <a href="#" class="navbar__list-item navbar__list-item-user mobile__item-user">
+                <img
+                  class="navbar__list-item-user-avatar"
+                  src="./assets/image/user-avatar__demo/user__avatar.jpg"
+                  alt=""
+                />
+                <span class="navbar__list-item-user-name navbar__list-item-link hide-on-mobile"
+                  >Trương Quốc Vương</span
+                >
+                <div class="item-user-about">
+                  <ul class="user-list-infor">
+                    <li class="user-infor">Tài khoản của tôi</li>
+                    <li class="user-infor">Đơn mua</li>
+                    <li class="user-infor">Đăng xuất</li>
+                  </ul>
+                </div>
+              </a>
             </div>
+            
+            
           </div>
         </div>
         <div class="header__sort-bar">

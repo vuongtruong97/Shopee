@@ -134,6 +134,16 @@ html {
     opacity: 1;
   }
 }
+@keyframes fadedown {
+  from {
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* Pagination */
 
 .pagination {
