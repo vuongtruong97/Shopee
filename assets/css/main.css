@@ -845,6 +845,7 @@
 }
 /* Mobile Category */
 .mobile-category {
+  display: none;
   margin-top: 10px;
   width: 100%;
   margin-top: 10px;
@@ -1163,6 +1164,7 @@
   color: var(--footer-text-color);
 }
 .footer__content-topic {
+  --footer-topic-line-height: 1.4rem;
   font-size: 1.4rem;
   font-weight: 600;
   display: block;

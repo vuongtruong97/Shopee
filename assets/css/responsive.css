@@ -34,6 +34,9 @@
   .header__content-cart .cart__list-item::before {
     display: none;
   }
+  .mobile-category {
+    display: flex;
+  }
 }
 /* Only Tablet */
 @media screen and (min-width: 740px) and (max-width: 1023px) {
@@ -178,6 +181,21 @@
   }
   .footer__content-topic-details {
     justify-content: center;
+  }
+  .footer__content-col {
+    padding: 0 10px;
+  }
+  .footer__content-topic {
+    padding: 0 10px;
+  }
+  .footer__area {
+    display: none;
+  }
+  .company-about-list-policy {
+    display: none;
+  }
+  .company-about-license-item {
+    background-size: 500%;
   }
 }
 
