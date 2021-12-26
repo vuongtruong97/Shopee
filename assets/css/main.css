@@ -1167,6 +1167,8 @@
   --footer-topic-line-height: 1.4rem;
   font-size: 1.4rem;
   font-weight: 600;
+  line-height: 1.6rem;
+  min-height: 3.2rem;
   display: block;
   margin: 20px 0;
 }
@@ -1187,6 +1189,9 @@
 }
 .footer__content-topic-details a {
   color: var(--footer-text-color);
+  text-align: center;
+  line-height: 1.5rem;
+  min-height: 3rem;
 }
 .footer__content-topic-details a:hover {
   color: var(--primary-color);

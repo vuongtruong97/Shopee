@@ -197,6 +197,10 @@
   .company-about-license-item {
     background-size: 500%;
   }
+  .company-about-contact {
+    padding: 0 16px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
