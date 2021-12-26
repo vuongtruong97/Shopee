@@ -150,8 +150,7 @@
     box-shadow: 3px 4px 12px -4px rgb(0 0 0 / 63%);
     animation: fadeIn linear 0.3s;
   }
-  .mobile-menu__item {
-  }
+
   .mobile-menu__item__link {
     color: #000;
     font-size: 1.6rem;
@@ -165,8 +164,7 @@
   .mobile-menu-btn:hover .mobile-menu-list {
     display: flex;
   }
-  .pagination {
-  }
+
   .pagination-item {
     margin: 0;
   }
