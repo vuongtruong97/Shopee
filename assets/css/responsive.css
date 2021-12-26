@@ -201,8 +201,8 @@
     padding: 0 16px;
     text-align: center;
   }
-  .c-o-3 {
-    margin-left: calc((100% / 12) * 3);
+  .header__content-logo--link {
+    padding: 0;
   }
 }
 
