@@ -58,7 +58,6 @@
 }
 
 .navbar {
-  --navbar-height: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -405,8 +404,7 @@
   font-size: 2.5rem;
   color: white;
 }
-.header__content-logo {
-}
+
 .header__content-logo--link {
   display: block;
   padding-right: 40px;
@@ -858,9 +856,7 @@
   flex-direction: row;
   overflow-x: auto;
 }
-.mobile-category__list::-webkit-scrollbar {
-  /* display: none; */
-}
+
 .mobile-category__item {
   margin-right: 10px;
   flex-shrink: 0;

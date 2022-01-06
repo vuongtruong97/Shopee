@@ -37,6 +37,10 @@
   .mobile-category {
     display: flex;
   }
+  .floating-item {
+    bottom: 3vh;
+    right: 3vw;
+  }
 }
 /* Only Tablet */
 @media screen and (min-width: 740px) and (max-width: 1023px) {
@@ -60,7 +64,7 @@
 /* Only Mobile */
 @media screen and (max-width: 740px) {
   :root {
-    --header-height: 88px;
+    --header-height: 78px;
   }
   .header {
     height: var(--header-height);
@@ -201,6 +205,7 @@
   }
   .header__content-logo--link {
     padding: 0;
+    transform: scale(0.9);
   }
 }
 
